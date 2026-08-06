@@ -180,14 +180,19 @@ De site gebruikt een volledige statische Next.js-export. `npm run build` schrijf
 
 De workflow in `.github/workflows/deploy-pages.yml` wordt automatisch uitgevoerd bij iedere push naar `main`:
 
-1. De repository wordt uitgecheckt.
-2. Node.js 20 wordt geïnstalleerd.
+1. `actions/checkout@v6` haalt de repository op.
+2. `actions/setup-node@v6` installeert Node.js 24 en activeert de npm-cache.
 3. `npm ci` installeert exact de versies uit `package-lock.json`.
 4. `npm run build` genereert de statische site in `out`.
-5. `out` wordt als GitHub Pages-artifact geüpload.
-6. GitHub publiceert het artifact in de `github-pages`-omgeving.
+5. Er wordt een `.nojekyll`-bestand toegevoegd, zodat GitHub Pages de export ongewijzigd serveert.
+6. De inhoud van `out` wordt verpakt en met `actions/upload-artifact@v7` als `github-pages`-artifact geüpload.
+7. `actions/deploy-pages@v5` publiceert het artifact in de `github-pages`-omgeving.
+
+De workflow gebruikt uitsluitend Actions met een Node.js 24-runtime. Daardoor verschijnen er geen waarschuwingen meer over de uitgefaseerde Node.js 20-runtime.
 
 De workflow kan ook handmatig worden gestart via **GitHub → Actions → Deploy to GitHub Pages → Run workflow**.
+
+Na een push kun je de voortgang bekijken onder **GitHub → Actions**. Open daar de meest recente uitvoering van **Deploy to GitHub Pages**. Een geslaagde publicatie bevat een groene `build`-job en daarna een groene `deploy`-job.
 
 ### Eenmalige GitHub-instellingen
 
