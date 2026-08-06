@@ -1,19 +1,29 @@
 @import "tailwindcss";
 
 @theme {
-  --color-interlogic-navy: #071b2b;
-  --color-interlogic-navy-light: #102d43;
-  --color-interlogic-cyan: #00a7bd;
-  --color-interlogic-cyan-dark: #008599;
-  --color-interlogic-surface: #f3f6f7;
-  --color-interlogic-border: #d9e2e6;
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --color-brand-950: #061927;
+  --color-brand-900: #0a2638;
+  --color-brand-800: #12394f;
+  --color-brand-500: #00a7bd;
+  --color-brand-600: #00899c;
+  --color-mist-50: #f5f8f8;
+  --color-mist-100: #edf3f4;
+  --color-mist-200: #dce7e9;
+  --shadow-card: 0 24px 60px -32px rgb(6 25 39 / 0.35);
 }
 
-html {
-  scroll-behavior: smooth;
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-body {
-  background: white;
-  color: var(--color-interlogic-navy);
+  body {
+    background: white;
+    color: var(--color-brand-950);
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--color-brand-500) 35%, white);
+  }
 }
