@@ -50,10 +50,10 @@ export default function VacancyPage({
           >
             <span aria-hidden="true">←</span> {t.vacancy.back}
           </Link>
-          <p className="text-brand-500 mt-14 text-sm font-medium tracking-[0.18em] uppercase">
+          <p className="text-brand-500 mt-14 text-xs font-bold tracking-[0.22em] uppercase sm:text-sm">
             {content.department}
           </p>
-          <h1 className="mt-5 max-w-4xl text-4xl leading-tight font-semibold tracking-[-0.04em] text-balance sm:text-6xl lg:text-7xl">
+          <h1 className="mt-5 max-w-4xl text-[2.35rem] leading-[1.02] font-semibold tracking-[-0.04em] text-balance sm:text-[3.25rem] lg:text-[4rem] xl:text-[4.5rem]">
             {content.title}
           </h1>
           <div className="mt-8 flex flex-wrap items-center gap-x-4 gap-y-3 text-sm font-medium text-slate-200 sm:text-base">
@@ -81,20 +81,20 @@ export default function VacancyPage({
       <section className="bg-white">
         <div className="mx-auto grid max-w-7xl gap-14 px-6 py-20 lg:grid-cols-[minmax(0,1fr)_360px] lg:gap-24 lg:px-8 lg:py-28">
           <article>
-            <p className="text-brand-600 text-sm font-medium tracking-[0.18em] uppercase">
+            <p className="text-brand-600 text-xs font-bold tracking-[0.22em] uppercase sm:text-sm">
               {t.vacancy.function}
             </p>
-            <h2 className="text-brand-950 mt-4 text-4xl font-semibold tracking-tight">
+            <h2 className="text-brand-950 mt-5 text-4xl leading-[1.03] font-semibold tracking-[-0.04em] sm:text-5xl">
               {t.vacancy.about}
             </h2>
-            <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-600">
+            <p className="mt-6 max-w-3xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
               {content.description}
             </p>
 
             <div className="mt-14 space-y-12 border-t border-mist-200 pt-12">
               {content.sections.map((section) => (
                 <section key={section.title}>
-                  <h2 className="text-brand-950 text-2xl font-semibold tracking-tight">
+                  <h2 className="text-brand-950 text-2xl font-semibold tracking-[-0.025em]">
                     {section.title}
                   </h2>
                   {section.paragraphs?.map((paragraph) => (
@@ -123,7 +123,7 @@ export default function VacancyPage({
             </div>
 
             <div className="mt-14 border-t border-mist-200 pt-12">
-              <h2 className="text-brand-950 text-2xl font-semibold tracking-tight">
+              <h2 className="text-brand-950 text-2xl font-semibold tracking-[-0.025em]">
                 {t.vacancy.workingAt}
               </h2>
               <p className="mt-5 max-w-3xl leading-8 text-slate-600">
@@ -132,10 +132,10 @@ export default function VacancyPage({
             </div>
 
             <div className="mt-14 border-t border-mist-200 pt-12">
-              <p className="text-brand-600 text-sm font-medium tracking-[0.18em] uppercase">
+              <p className="text-brand-600 text-xs font-bold tracking-[0.22em] uppercase sm:text-sm">
                 {t.vacancy.expect}
               </p>
-              <h2 className="text-brand-950 mt-4 text-2xl font-semibold tracking-tight">
+              <h2 className="text-brand-950 mt-5 text-2xl font-semibold tracking-[-0.025em]">
                 {t.vacancy.expectTitle}
               </h2>
               <ul className="mt-7 grid gap-4 text-slate-600 sm:grid-cols-2">
@@ -173,7 +173,7 @@ export default function VacancyPage({
                 <dt className="text-sm font-medium text-slate-500">
                   {t.vacancy.employment}
                 </dt>
-                <dd className="text-brand-950 mt-3 text-lg font-bold">
+                <dd className="text-brand-950 mt-3 text-lg font-semibold">
                   {content.employmentType}
                 </dd>
               </div>
@@ -181,7 +181,7 @@ export default function VacancyPage({
                 <dt className="text-sm font-medium text-slate-500">
                   {t.vacancy.hours}
                 </dt>
-                <dd className="text-brand-950 mt-3 text-lg font-bold">
+                <dd className="text-brand-950 mt-3 text-lg font-semibold">
                   {vacancy.hours} {t.vacancy.hoursSuffix}
                 </dd>
               </div>
@@ -190,7 +190,7 @@ export default function VacancyPage({
 
           <aside>
             <div className="border-brand-500 sticky top-6 border-t-2 pt-7">
-              <h2 className="text-brand-950 text-2xl font-semibold tracking-tight">
+              <h2 className="text-brand-950 text-2xl font-semibold tracking-[-0.025em]">
                 {t.vacancy.applyTitle}
               </h2>
               <p className="mt-4 leading-7 text-slate-600">
@@ -233,7 +233,7 @@ export default function VacancyPage({
       <section className="text-brand-950 bg-mist-50">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-8 px-6 py-16 sm:flex-row sm:items-center lg:px-8">
           <div>
-            <h2 className="text-2xl font-bold tracking-tight">
+            <h2 className="text-2xl font-semibold tracking-[-0.025em]">
               {t.vacancy.otherTitle}
             </h2>
             <p className="mt-3 text-slate-600">{t.vacancy.otherText}</p>
@@ -246,7 +246,7 @@ export default function VacancyPage({
           </Link>
         </div>
       </section>
-      <Footer />
+      <Footer locale={locale} />
     </main>
   );
 }

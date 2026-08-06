@@ -25,61 +25,112 @@ export default function HomePage({ locale }: { locale: Locale }) {
 
   return (
     <main className="overflow-hidden">
-      <section className="bg-brand-950 relative isolate min-h-[680px] text-white">
+      <section className="bg-brand-950 relative isolate min-h-[760px] overflow-hidden text-white sm:min-h-[820px] lg:min-h-[860px]">
         <Image
           src="/images/hero-interlogic.jpg"
           alt={t.hero.imageAlt}
           fill
           priority
           sizes="100vw"
-          className="-z-20 object-cover object-center"
+          className="-z-30 object-cover object-[62%_center] sm:object-center"
         />
-        <div className="from-brand-950/95 via-brand-950/75 to-brand-950/5 absolute inset-0 -z-10 bg-linear-to-r" />
-        <div className="from-brand-950/55 to-brand-950/10 absolute inset-0 -z-10 bg-linear-to-t via-transparent" />
-
+        <div className="from-brand-950 via-brand-950/82 to-brand-950/15 absolute inset-0 -z-20 bg-linear-to-r" />
+        <div className="from-brand-950 to-brand-950/35 absolute inset-0 -z-20 bg-linear-to-t via-transparent" />
         <Header locale={locale} />
 
-        <div className="mx-auto flex min-h-[570px] max-w-7xl items-center px-6 pb-20 lg:px-8">
-          <div className="max-w-4xl">
-            <p className="text-brand-500 flex items-center gap-3 text-sm font-medium tracking-[0.18em] uppercase">
-              <span className="bg-brand-500 size-1.5 rounded-full" />
-              {t.hero.eyebrow}
-            </p>
-            <h1 className="mt-7 text-5xl leading-[0.96] font-semibold tracking-[-0.05em] text-balance drop-shadow-sm sm:text-7xl lg:text-8xl">
-              {t.hero.titleLead} {t.hero.titleStrong}
-              <span className="text-brand-500 mt-5 flex items-center gap-4 text-[0.42em] leading-tight font-medium tracking-[-0.02em] sm:gap-6">
-                <span className="bg-brand-500 h-px w-10 shrink-0 sm:w-16" />
-                <span>
-                  {t.hero.accentLead} {t.hero.accentStrong}
+        <div className="mx-auto flex min-h-[610px] max-w-7xl items-center px-5 pb-32 sm:min-h-[650px] sm:px-8 sm:pb-36 lg:px-8">
+          <div className="grid w-full gap-8 pt-12 sm:pt-16 lg:grid-cols-[1.15fr_0.85fr] lg:items-end lg:gap-16 lg:pt-20 xl:gap-24">
+            <div className="max-w-3xl">
+              <p className="text-brand-500 flex items-center gap-3 text-xs font-semibold tracking-[0.22em] uppercase sm:text-sm">
+                <span className="bg-brand-500 h-px w-8" />
+                {t.hero.eyebrow}
+              </p>
+              <h1 className="mt-6 max-w-3xl text-[2.35rem] leading-[1.02] font-semibold tracking-[-0.04em] text-balance sm:text-[3.25rem] lg:text-[4rem] xl:text-[4.5rem]">
+                <span className="sm:whitespace-nowrap">{t.hero.titleLead}</span>
+                <br />
+                <span className="mt-2 inline-block text-[0.68em] font-medium tracking-[-0.025em] text-white/70 sm:mt-3">
+                  {t.hero.titleStrong}
                 </span>
-              </span>
-            </h1>
-            <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-200 sm:text-xl">
-              {t.hero.text}
-            </p>
-            <a
-              href="#vacatures"
-              className="bg-brand-500 hover:bg-brand-600 mt-10 inline-flex items-center gap-3 rounded-full px-7 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
-            >
-              {t.hero.cta} <ArrowRight />
-            </a>
+              </h1>
+              <p className="font-brand-script text-brand-500 mt-5 -rotate-2 text-xl leading-none sm:text-2xl lg:text-3xl">
+                {t.hero.accentLead} {t.hero.accentStrong}
+              </p>
+            </div>
+
+            <div className="lg:bg-brand-950/55 max-w-xl lg:justify-self-end lg:rounded-[1.75rem] lg:border lg:border-white/15 lg:p-8 lg:shadow-2xl lg:shadow-black/15 lg:backdrop-blur-xl xl:p-10">
+              <p className="text-base leading-7 text-slate-200 sm:text-lg sm:leading-8">
+                {t.hero.text}
+              </p>
+              <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                <a
+                  href="#vacatures"
+                  className="bg-brand-500 hover:bg-brand-600 group shadow-brand-950/20 inline-flex min-h-14 items-center justify-center gap-3 rounded-full px-7 py-4 text-sm font-semibold text-white shadow-xl transition hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+                >
+                  {t.hero.cta}
+                  <span
+                    aria-hidden="true"
+                    className="text-lg transition-transform group-hover:translate-x-1"
+                  >
+                    →
+                  </span>
+                </a>
+                <a
+                  href={`tel:${contactPhoneHref}`}
+                  className="inline-flex min-h-14 items-center justify-center gap-3 rounded-full border border-white/25 bg-white/5 px-6 py-4 text-sm font-semibold backdrop-blur-sm transition hover:border-white/50 hover:bg-white/10"
+                >
+                  <span className="bg-brand-500 size-2 rounded-full" />
+                  0546-898960
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="absolute right-0 bottom-0 left-0">
+          <div className="mx-auto max-w-7xl px-5 sm:px-8">
+            <div className="bg-brand-950/75 grid grid-cols-3 overflow-hidden rounded-t-[1.75rem] border border-b-0 border-white/15 shadow-2xl backdrop-blur-xl">
+              {[
+                ["100+", t.hero.stats[0]],
+                ["24/7", t.hero.stats[1]],
+                [
+                  String(activeVacancies.length),
+                  activeVacancies.length === 1
+                    ? t.jobs.singular
+                    : t.jobs.plural,
+                ],
+              ].map(([value, label], index) => (
+                <div
+                  key={label}
+                  className={`px-3 py-5 sm:px-8 sm:py-7 ${index === 1 ? "border-x border-white/10" : ""}`}
+                >
+                  <p className="text-lg font-semibold text-white sm:text-3xl">
+                    {value}
+                  </p>
+                  <p className="mt-1 text-[9px] leading-4 text-slate-400 sm:text-xs">
+                    {label}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-mist-50 py-20 sm:py-24 lg:py-28">
+      <section
+        id="werken-bij"
+        className="relative scroll-mt-8 overflow-hidden bg-mist-50 py-20 sm:py-28 lg:py-32"
+      >
         <div className="bg-brand-500/5 absolute top-0 left-1/2 h-64 w-96 -translate-x-1/2 rounded-full blur-3xl" />
         <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
           <div className="shadow-card grid overflow-hidden rounded-3xl border border-mist-200 bg-white lg:grid-cols-[0.9fr_1.1fr]">
             <div className="relative p-8 sm:p-12 lg:p-16">
               <div className="bg-brand-500 absolute top-0 left-8 h-1 w-16 rounded-b-full sm:left-12 lg:left-16" />
-              <p className="text-brand-600 text-sm font-bold tracking-[0.2em] uppercase">
+              <p className="text-brand-600 text-xs font-bold tracking-[0.22em] uppercase sm:text-sm">
                 {t.intro.eyebrow}
               </p>
-              <h2 className="text-brand-950 mt-5 max-w-lg text-4xl leading-tight font-semibold tracking-tight sm:text-5xl">
+              <h2 className="text-brand-950 mt-5 max-w-lg text-4xl leading-[1.03] font-semibold tracking-[-0.04em] sm:text-5xl lg:text-6xl">
                 {t.intro.title}
               </h2>
-              <p className="mt-7 max-w-xl text-lg leading-8 text-slate-600">
+              <p className="mt-6 max-w-xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
                 {t.intro.text}
               </p>
             </div>
@@ -94,8 +145,10 @@ export default function HomePage({ locale }: { locale: Locale }) {
                     {String(index + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="text-brand-950 font-semibold">{title}</h3>
-                    <p className="mt-1.5 max-w-md text-sm leading-6 text-slate-500">
+                    <h3 className="text-brand-950 text-xl font-semibold">
+                      {title}
+                    </h3>
+                    <p className="mt-3 max-w-md text-sm leading-6 text-slate-500 sm:text-base">
                       {description}
                     </p>
                   </div>
@@ -111,13 +164,13 @@ export default function HomePage({ locale }: { locale: Locale }) {
         className="bg-brand-950 relative scroll-mt-0 overflow-hidden text-white"
       >
         <div className="bg-brand-500/10 absolute -top-48 right-0 size-96 rounded-full blur-3xl" />
-        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-28">
+        <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28 lg:py-32">
           <div className="relative flex flex-col justify-between gap-8 sm:flex-row sm:items-end">
             <div>
-              <p className="text-brand-500 text-sm font-medium tracking-[0.18em] uppercase">
+              <p className="text-brand-500 text-xs font-bold tracking-[0.22em] uppercase sm:text-sm">
                 {t.jobs.eyebrow}
               </p>
-              <h2 className="mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+              <h2 className="mt-5 text-4xl font-semibold tracking-[-0.04em] text-white sm:text-5xl lg:text-6xl">
                 {t.jobs.title}
               </h2>
             </div>
@@ -141,10 +194,10 @@ export default function HomePage({ locale }: { locale: Locale }) {
                 >
                   <div className="flex flex-col justify-between gap-8 sm:flex-row sm:items-center">
                     <div>
-                      <p className="text-brand-600 text-sm font-semibold">
+                      <p className="text-brand-600 text-xs font-bold tracking-[0.16em] uppercase">
                         {vacancy.translations[locale].department}
                       </p>
-                      <h3 className="text-brand-950 mt-2 text-2xl font-semibold tracking-tight sm:text-3xl">
+                      <h3 className="text-brand-950 mt-3 text-2xl font-semibold tracking-[-0.025em] sm:text-3xl">
                         {vacancy.translations[locale].title}
                       </h3>
                       <div className="mt-5 flex flex-wrap items-center gap-2 text-sm text-slate-600">
@@ -193,35 +246,62 @@ export default function HomePage({ locale }: { locale: Locale }) {
         </div>
       </section>
 
-      <section className="bg-brand-950 text-white">
-        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-8 px-6 py-16 lg:flex-row lg:items-center lg:px-8">
-          <div>
-            <p className="text-brand-500 text-sm font-medium tracking-[0.18em] uppercase">
+      <section className="text-brand-950 bg-white">
+        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 sm:py-24 lg:grid-cols-[0.85fr_1.15fr] lg:items-center lg:gap-20 lg:px-8 lg:py-28">
+          <div className="max-w-xl">
+            <p className="text-brand-600 text-xs font-bold tracking-[0.22em] uppercase sm:text-sm">
               {t.contact.eyebrow}
             </p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight">
+            <h2 className="text-brand-950 mt-5 text-4xl leading-[1.03] font-semibold tracking-[-0.04em] sm:text-5xl lg:text-6xl">
               {t.contact.title}
             </h2>
-            <p className="mt-3 max-w-xl text-white/85">{t.contact.text}</p>
+            <p className="mt-5 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
+              {t.contact.text}
+            </p>
+            <div className="mt-8 flex flex-wrap items-center gap-7">
+              <a
+                href={`tel:${contactPhoneHref}`}
+                className="bg-brand-500 hover:bg-brand-600 focus-visible:outline-brand-500 inline-flex min-h-14 shrink-0 items-center justify-center gap-3 rounded-full px-7 py-4 text-sm font-semibold text-white transition focus-visible:outline-2 focus-visible:outline-offset-4"
+              >
+                {t.contact.call}
+              </a>
+              <a
+                href={`mailto:${contactEmail}`}
+                className="border-brand-500 text-brand-950 hover:text-brand-600 focus-visible:outline-brand-500 inline-flex shrink-0 items-center justify-center gap-3 border-b pb-2 text-sm font-semibold transition hover:gap-4 focus-visible:outline-2 focus-visible:outline-offset-4"
+              >
+                {t.contact.email} <ArrowRight />
+              </a>
+            </div>
           </div>
-          <div className="flex flex-wrap items-center gap-7">
-            <a
-              href={`tel:${contactPhoneHref}`}
-              className="bg-brand-500 hover:bg-brand-600 inline-flex shrink-0 items-center justify-center gap-3 rounded-full px-6 py-3.5 text-sm font-semibold transition focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+
+          <figure className="relative overflow-hidden rounded-[1.75rem] border border-mist-200 bg-mist-50 p-8 sm:p-10 lg:p-12">
+            <span
+              aria-hidden="true"
+              className="text-brand-500 absolute top-5 right-7 text-7xl leading-none font-semibold opacity-20"
             >
-              {t.contact.call}
-            </a>
-            <a
-              href={`mailto:${contactEmail}`}
-              className="border-brand-500 hover:text-brand-500 inline-flex shrink-0 items-center justify-center gap-3 border-b pb-2 text-sm font-semibold transition hover:gap-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
-            >
-              {t.contact.email} <ArrowRight />
-            </a>
-          </div>
+              “
+            </span>
+            <blockquote className="text-brand-950 relative max-w-2xl text-2xl leading-snug font-semibold tracking-[-0.025em] sm:text-3xl">
+              “{t.contact.quote}”
+            </blockquote>
+            <figcaption className="mt-8 flex items-center gap-4">
+              <span className="bg-brand-500 flex size-11 items-center justify-center rounded-full text-sm font-bold text-white">
+                IL
+              </span>
+              <span>
+                <strong className="text-brand-950 block text-sm">
+                  {t.contact.quoteBy}
+                </strong>
+                <span className="text-sm text-slate-500">
+                  {t.contact.quoteRole}
+                </span>
+              </span>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
-      <Footer />
+      <Footer locale={locale} />
     </main>
   );
 }
