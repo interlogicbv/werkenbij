@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import {
   FaFacebookF,
+  FaGithub,
   FaInstagram,
   FaLinkedinIn,
   FaYoutube,
@@ -56,6 +57,11 @@ export default function Footer({ locale }: { locale: Locale }) {
                 href="https://www.youtube.com/@interlogicbv"
                 label="YouTube"
                 icon={<FaYoutube />}
+              />
+              <SocialLink
+                href="https://github.com/interlogicbv"
+                label="GitHub"
+                icon={<FaGithub />}
               />
             </div>
           </div>

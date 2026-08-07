@@ -30,7 +30,18 @@
 }
 
 @layer components {
-  main .absolute.rounded-full {
-    display: none;
+  .section-eyebrow {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: 40rem) {
+    .section-eyebrow {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
   }
 }

@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     description: meta.description,
     images: [
       {
-        url: "/images/hero-interlogic.jpg",
-        width: 2658,
-        height: 1772,
+        url: "/images/og-image.jpg",
+        width: 1280,
+        height: 630,
         type: "image/jpeg",
         alt: meta.imageAlt,
       },
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: meta.title,
     description: meta.description,
-    images: [{ url: "/images/hero-interlogic.jpg", alt: meta.imageAlt }],
+    images: [{ url: "/images/og-image.jpg", alt: meta.imageAlt }],
   },
 };
 
