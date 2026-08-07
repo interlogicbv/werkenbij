@@ -1,4 +1,4 @@
-import { Vacancy } from "@/types/vacancy";
+import type { Vacancy } from "@/types/vacancy";
 
 export const vacancies: Vacancy[] = [
   {
@@ -7,7 +7,6 @@ export const vacancies: Vacancy[] = [
     hours: 40,
     publishedAt: new Date("2026-08-05"),
     image: "/images/chauffeur-01.webp",
-    indeedUrl: "https://indeed.nl",
     active: true,
     translations: {
       nl: {
@@ -101,7 +100,8 @@ export const vacancies: Vacancy[] = [
     locations: ["Coevorden"],
     hours: 40,
     publishedAt: new Date("2026-08-06"),
-    image: "/images/planner-02.webp",
+    image: "/images/planner-01.webp",
+    indeedUrl: "https://indeed.nl",
     active: true,
     translations: {
       nl: {

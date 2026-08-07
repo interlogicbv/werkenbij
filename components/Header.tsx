@@ -1,62 +1,73 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { dictionaries, localeNames, locales, type Locale } from "@/lib/i18n";
+import Menubar from "@/components/Menubar";
+import type { Locale } from "@/lib/i18n";
 
 export default function Header({
   locale,
-  path = "",
+  slug,
+  image,
+  title,
+  department,
+  details,
+  backLabel,
 }: {
   locale: Locale;
-  path?: string;
+  slug: string;
+  image: string;
+  title: string;
+  department: string;
+  details: (string | undefined)[];
+  backLabel: string;
 }) {
-  const { nav } = dictionaries[locale];
-
   return (
-    <header className="relative z-20 px-4 pt-4 sm:px-6 sm:pt-6">
-      <nav
-        className="bg-brand-950/45 mx-auto flex max-w-7xl items-center justify-between rounded-2xl border border-white/12 px-4 py-3 shadow-2xl shadow-black/10 backdrop-blur-xl sm:px-5"
-        aria-label={nav.main}
-      >
+    <header className="bg-brand-950 relative isolate overflow-hidden text-white">
+      <Image
+        src={image}
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="-z-20 object-cover object-[40%_center] opacity-65 sm:object-center"
+      />
+      <div className="from-brand-950/95 via-brand-950/75 to-brand-950/15 absolute inset-0 -z-10 bg-linear-to-r" />
+      <div className="from-brand-950/60 to-brand-950/10 absolute inset-0 -z-10 bg-linear-to-t via-transparent" />
+      <Menubar locale={locale} subpage={`vacatures/${slug}/`} />
+      <div className="mx-auto max-w-7xl px-6 pt-6 pb-20 sm:pt-8 lg:px-8 lg:pt-10 lg:pb-28">
         <Link
-          href={`/${locale}`}
-          className="focus-visible:outline-brand-500 shrink-0 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4"
-          aria-label={nav.homeLabel}
+          href={`/${locale}/#vacatures`}
+          className="group hover:border-brand-500/40 hover:bg-brand-500/10 focus-visible:outline-brand-500 inline-flex min-h-12 items-center gap-3 rounded-full border border-white/15 bg-white/5 px-5 text-sm font-semibold text-white transition focus-visible:outline-2 focus-visible:outline-offset-4"
         >
-          <Image
-            src="/images/white_logo.png"
-            alt="Interlogic"
-            width={1088}
-            height={458}
-            priority
-            className="h-8 w-auto sm:h-9 lg:h-10"
-          />
+          <span
+            aria-hidden="true"
+            className="text-lg transition-transform group-hover:-translate-x-1"
+          >
+            ←
+          </span>
+          {backLabel}
         </Link>
-        <div className="flex min-w-0 items-center gap-2 sm:gap-3">
-          <Link
-            href={`/${locale}/#vacatures`}
-            className="focus-visible:outline-brand-500 hidden text-sm font-medium text-white/75 transition hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 sm:block"
-          >
-            {nav.vacancies}
-          </Link>
-          <div
-            className="flex shrink-0 items-center rounded-full border border-white/15 bg-white/5 p-1"
-            aria-label={nav.language}
-          >
-            {locales.map((item) => (
-              <Link
-                key={item}
-                href={`/${item}${path}`}
-                hrefLang={item}
-                aria-current={item === locale ? "page" : undefined}
-                className={`focus-visible:outline-brand-500 rounded-full px-2 py-1.5 text-[10px] font-bold transition focus-visible:outline-2 sm:px-2.5 sm:text-xs ${item === locale ? "text-brand-950 bg-white shadow-sm" : "text-white/60 hover:text-white"}`}
-              >
-                {localeNames[item]}
-              </Link>
+        <p className="text-brand-500 mt-14 text-xs font-bold tracking-[0.22em] uppercase sm:text-sm">
+          {department}
+        </p>
+        <h1 className="mt-5 max-w-4xl text-[2.35rem] leading-[1.02] font-bold tracking-tighter text-balance sm:text-[3.25rem] lg:text-[4rem]">
+          {title}
+        </h1>
+        <div className="mt-8 flex flex-wrap items-center gap-x-4 gap-y-3 text-sm font-medium text-slate-200 sm:text-base">
+          {details
+            .filter((item): item is string => Boolean(item))
+            .map((item, index) => (
+              <span key={item} className="contents">
+                {index > 0 && (
+                  <span aria-hidden="true" className="text-brand-500">
+                    •
+                  </span>
+                )}
+                <span>{item}</span>
+              </span>
             ))}
-          </div>
         </div>
-      </nav>
+      </div>
     </header>
   );
 }

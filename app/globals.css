@@ -6,7 +6,6 @@
     "Segoe UI", sans-serif;
   --color-brand-950: #061927;
   --color-brand-900: #0a2638;
-  --color-brand-800: #12394f;
   --color-brand-500: #00a7bd;
   --color-brand-600: #00899c;
   --color-mist-50: #f5f8f8;
@@ -33,13 +32,5 @@
 @layer components {
   main .absolute.rounded-full {
     display: none;
-  }
-
-  .font-brand-script {
-    font-family:
-      "Brush Script MT", "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive;
-    font-style: italic;
-    font-weight: 500;
-    letter-spacing: -0.035em;
   }
 }

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 
 import VacancyPage from "@/components/VacancyPage";
 import { vacancies } from "@/data/vacancies";
+import { siteUrl } from "@/lib/contact";
 import { isLocale, locales } from "@/lib/i18n";
 
 export const dynamicParams = false;
@@ -22,37 +23,53 @@ export async function generateMetadata({
   if (!isLocale(lang)) return {};
   const vacancy = vacancies.find((item) => item.slug === slug && item.active);
   if (!vacancy) return {};
+
   const content = vacancy.translations[lang];
+  const vacancyPath = `/${lang}/vacatures/${slug}/`;
+  const vacancyUrl = new URL(vacancyPath, siteUrl).toString();
+  const shareImage = vacancy.image.replace(/\.webp$/, "-og.jpg");
+  const shareImageUrl = new URL(shareImage, siteUrl).toString();
+  const socialTitle = `${content.title} | Werken bij Interlogic`;
+  const imageAlt = `${content.title} – Werken bij Interlogic`;
+  const openGraphLocales = { nl: "nl_NL", en: "en_GB", de: "de_DE" } as const;
+
   return {
     title: content.title,
     description: content.description,
     alternates: {
-      canonical: `/${lang}/vacatures/${slug}`,
-      languages: Object.fromEntries(
-        locales.map((locale) => [locale, `/${locale}/vacatures/${slug}`]),
-      ),
+      canonical: vacancyUrl,
+      languages: {
+        ...Object.fromEntries(
+          locales.map((locale) => [locale, `/${locale}/vacatures/${slug}/`]),
+        ),
+        "x-default": `/nl/vacatures/${slug}/`,
+      },
     },
     openGraph: {
-      title: content.title,
+      title: socialTitle,
       description: content.description,
       type: "website",
-      url: `/${lang}/vacatures/${slug}`,
-      siteName: "Interlogic",
-      locale: lang === "nl" ? "nl_NL" : lang === "de" ? "de_DE" : "en_GB",
+      url: vacancyUrl,
+      siteName: "Werken bij Interlogic",
+      locale: openGraphLocales[lang],
+      alternateLocale: locales
+        .filter((locale) => locale !== lang)
+        .map((locale) => openGraphLocales[locale]),
       images: [
         {
-          url: vacancy.image,
+          url: shareImageUrl,
           width: 1200,
           height: 630,
-          alt: `${content.title} – Interlogic`,
+          alt: imageAlt,
+          type: "image/jpeg",
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: content.title,
+      title: socialTitle,
       description: content.description,
-      images: [vacancy.image],
+      images: [{ url: shareImageUrl, alt: imageAlt }],
     },
   };
 }

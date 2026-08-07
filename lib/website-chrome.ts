@@ -1,0 +1,100 @@
+import type { Locale } from "@/lib/i18n";
+
+export const websiteChrome = {
+  nl: {
+    nav: {
+      main: "Hoofdnavigatie",
+      about: "Over ons",
+      careers: "Vacatures",
+      request: "Nog vragen?",
+      language: "Taal kiezen",
+      home: "Interlogic homepage",
+    },
+    hero: {
+      imageAlt: "Interlogic vrachtwagens onderweg",
+      titleLead: "Werken bij Interlogic",
+      titleStrong: "Klaar voor de rit?",
+      accent: "We think forward!",
+      text: "Een baan waarin je wordt gezien, verantwoordelijkheid krijgt en iedere dag samen iets in beweging brengt.",
+      cta: "Ontdek jouw plek",
+      stats: [
+        ["100+", "Combinaties op de weg"],
+        ["24/7", "Beschikbaar vanuit Coevorden"],
+        ["4.000 m²", "Veilige opslag"],
+      ],
+    },
+    company: {
+      discover: "Ontdekken",
+      chamber: "KVK",
+      vat: "BTW",
+      privacy: "Privacyverklaring",
+      terms: "Algemene voorwaarden",
+    },
+    report: "VSME-rapport",
+    footer: "We think forward!",
+  },
+  en: {
+    nav: {
+      main: "Main navigation",
+      about: "About us",
+      careers: "Vacancies",
+      request: "Any questions?",
+      language: "Choose language",
+      home: "Interlogic homepage",
+    },
+    hero: {
+      imageAlt: "Interlogic trucks on the road",
+      titleLead: "Careers at Interlogic",
+      titleStrong: "Ready for the journey?",
+      accent: "We think forward!",
+      text: "A job where you are seen, given responsibility and help move something forward together every day.",
+      cta: "Find your place",
+      stats: [
+        ["100+", "Vehicle combinations on the road"],
+        ["24/7", "Available from Coevorden"],
+        ["4,000 m²", "Secure warehousing"],
+      ],
+    },
+    company: {
+      discover: "Discover",
+      chamber: "Chamber of Commerce",
+      vat: "VAT",
+      privacy: "Privacy statement",
+      terms: "General terms and conditions",
+    },
+    report: "VSME report",
+    footer: "We think forward!",
+  },
+  de: {
+    nav: {
+      main: "Hauptnavigation",
+      about: "Über uns",
+      careers: "Stellenangebote",
+      request: "Noch Fragen?",
+      language: "Sprache wählen",
+      home: "Interlogic Startseite",
+    },
+    hero: {
+      imageAlt: "Interlogic-Lkw unterwegs",
+      titleLead: "Karriere bei Interlogic",
+      titleStrong: "Bereit für die Fahrt?",
+      accent: "We think forward!",
+      text: "Ein Job, in dem du gesehen wirst, Verantwortung übernimmst und jeden Tag gemeinsam etwas bewegst.",
+      cta: "Finde deinen Platz",
+      stats: [
+        ["100+", "Fahrzeugkombinationen auf der Straße"],
+        ["24/7", "Verfügbar ab Coevorden"],
+        ["4.000 m²", "Sichere Lagerung"],
+      ],
+    },
+    company: {
+      discover: "Entdecken",
+      chamber: "Handelsregister",
+      vat: "USt-IdNr.",
+      privacy: "Datenschutzerklärung",
+      terms: "Allgemeine Geschäftsbedingungen",
+    },
+    report: "VSME-Bericht",
+    footer: "We think forward!",
+  },
+} satisfies Record<Locale, unknown>;
