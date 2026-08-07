@@ -26,8 +26,21 @@ export default function Hero({ locale }: { locale: Locale }) {
         sizes="100vw"
         className="-z-30 object-cover object-[62%_center] sm:object-center"
       />
-      <div className="from-brand-950 via-brand-950/82 to-brand-950/15 absolute inset-0 -z-20 bg-linear-to-r" />
-      <div className="from-brand-950 to-brand-950/35 absolute inset-0 -z-20 bg-linear-to-t via-transparent" />
+      <video
+        aria-hidden="true"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        poster={`${basePath}/images/hero-interlogic.jpg`}
+        disablePictureInPicture
+        className="absolute inset-0 -z-20 size-full object-cover object-center motion-reduce:hidden"
+      >
+        <source src={`${basePath}/videos/interlogic.mp4`} type="video/mp4" />
+      </video>
+      <div className="from-brand-950/90 via-brand-950/60 absolute inset-0 -z-10 bg-linear-to-r to-transparent" />
+      <div className="from-brand-950/80 to-brand-950/20 absolute inset-0 -z-10 bg-linear-to-t via-transparent" />
       <Menubar locale={locale} />
 
       <div className="mx-auto flex min-h-152.5 max-w-7xl items-center px-5 pb-32 sm:min-h-162.5 sm:px-8 sm:pb-36 lg:px-8">

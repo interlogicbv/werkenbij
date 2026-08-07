@@ -159,7 +159,7 @@ export default function VacancyPage({
 
           <aside>
             <div className="shadow-card sticky top-6 overflow-hidden rounded-3xl border border-mist-200 bg-white">
-              <div className="relative aspect-[16/10] overflow-hidden">
+              <div className="relative aspect-16/10 overflow-hidden">
                 <Image
                   src="/images/collega-contact.webp"
                   alt={t.contact.imageAlt}
