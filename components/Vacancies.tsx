@@ -6,7 +6,12 @@ import { dictionaries, type Locale } from "@/lib/i18n";
 
 export default function Vacancies({ locale }: { locale: Locale }) {
   const t = dictionaries[locale];
-  const activeVacancies = vacancies.filter((vacancy) => vacancy.active);
+  const activeVacancies = vacancies
+    .filter((vacancy) => vacancy.active)
+    .sort(
+      (first, second) =>
+        second.publishedAt.getTime() - first.publishedAt.getTime(),
+    );
 
   return (
     <section

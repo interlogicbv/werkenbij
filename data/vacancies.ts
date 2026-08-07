@@ -14,25 +14,44 @@ export const vacancies: Vacancy[] = [
         department: "Transport",
         employmentType: "Fulltime",
         description:
-          "Breng onze lading veilig en op tijd door Europa en word het vertrouwde gezicht van Interlogic onderweg.",
+          "Houd je van internationale ritten, goed materieel en duidelijke afspraken? Stap in en breng onze deel- en complete ladingen door heel Europa.",
         sections: [
           {
-            title: "Wat ga je doen?",
+            title: "Europa wordt jouw werkgebied",
             paragraphs: [
-              "Als internationaal chauffeur bij Interlogic ben je dagelijks onderweg voor onze klanten in heel Europa. Je zorgt dat iedere lading veilig, zorgvuldig en op tijd op de bestemming aankomt.",
-              "Onderweg heb je direct contact met onze planning. Je werkt zelfstandig, maar staat er nooit alleen voor: samen zorgen we dat iedere rit goed verloopt.",
+              "Als Internationaal Chauffeur bij Interlogic vervoer je deel- en complete ladingen naar uiteenlopende bestemmingen in Europa. Je bent gedurende de werkweek van huis en krijgt onderweg veel vrijheid en verantwoordelijkheid.",
+              "Een belangrijk onderdeel van je werk is het efficiënt koppelen en wisselen van trailers op strategische locaties. Je houdt contact met onze planning, controleert je documenten en zorgt dat lading, materieel en afspraken in goede handen zijn.",
             ],
             bullets: [
-              "Internationale transporten veilig en efficiënt uitvoeren",
+              "Deel- en complete ladingen door Europa vervoeren",
+              "Trailers veilig en efficiënt koppelen en wisselen",
               "Lading en transportdocumenten zorgvuldig controleren",
-              "Contact onderhouden met de planning en onze klanten",
-              "Ons materieel netjes en professioneel gebruiken",
+              "Onderweg duidelijk afstemmen met de planning en klanten",
+              "Jouw truck netjes houden en professioneel omgaan met ons materieel",
             ],
           },
           {
-            title: "Waarom past deze functie bij jou?",
+            title: "Dit neem jij mee",
             paragraphs: [
-              "Je houdt van vrijheid op de weg, neemt verantwoordelijkheid en vindt het belangrijk om afspraken na te komen. Met jouw rustige en professionele houding ben je een vertrouwd gezicht voor onze klanten.",
+              "Je werkt graag zelfstandig, maar weet dat goed transport teamwork is. Ook wanneer een rit anders loopt dan gepland, blijf je rustig, betrouwbaar en oplossingsgericht.",
+            ],
+            bullets: [
+              "Rijbewijs B, C en CE, een geldige Code 95 en bestuurderskaart",
+              "Een goede beheersing van het Nederlands; Duits en/of Engels is mooi meegenomen",
+              "De bereidheid om van maandag tot en met vrijdag onderweg te zijn",
+              "Een zelfstandige, zorgvuldige en betrouwbare werkhouding",
+            ],
+          },
+          {
+            title: "Daarom rijd je bij Interlogic",
+            paragraphs: [
+              "Je vertrekt vanuit Coevorden of Almelo en rijdt met modern, goed uitgerust materieel dat onderweg echt jouw werkplek is. Je komt terecht in een klein en hecht team met korte lijnen naar de planning.",
+            ],
+            bullets: [
+              "Arbeidsvoorwaarden en salaris volgens de cao Beroepsgoederenvervoer",
+              "Uitzicht op een vast dienstverband",
+              "Bedrijfsfitness, aanvullende vakantiedagen en gezamenlijke teamactiviteiten",
+              "Een professionele organisatie waarin afspraak ook echt afspraak is",
             ],
           },
         ],
@@ -42,25 +61,44 @@ export const vacancies: Vacancy[] = [
         department: "Transport",
         employmentType: "Full-time",
         description:
-          "Deliver our cargo safely and on time across Europe and become the trusted face of Interlogic on the road.",
+          "Do you enjoy international routes, quality equipment and clear agreements? Get behind the wheel and move our part and full loads across Europe.",
         sections: [
           {
-            title: "What will you do?",
+            title: "Europe becomes your workplace",
             paragraphs: [
-              "As an international driver at Interlogic, you will be on the road for our customers across Europe. You make sure every load reaches its destination safely, carefully and on time.",
-              "You stay in direct contact with our planning team while on the road. You work independently, but you are never on your own: together, we make every journey run smoothly.",
+              "As an International Driver at Interlogic, you transport part and full loads to a wide range of destinations across Europe. You spend the working week away from home and enjoy considerable freedom and responsibility on the road.",
+              "Efficiently coupling and exchanging trailers at strategic locations is an important part of your work. You stay in contact with planning, check your documents and make sure cargo, equipment and commitments are in safe hands.",
             ],
             bullets: [
-              "Carry out international transports safely and efficiently",
+              "Transport part and full loads throughout Europe",
+              "Couple and exchange trailers safely and efficiently",
               "Carefully check cargo and transport documents",
-              "Stay in touch with planning and our customers",
-              "Use our equipment neatly and professionally",
+              "Coordinate clearly with planning and customers while on the road",
+              "Keep your truck tidy and treat our equipment professionally",
             ],
           },
           {
-            title: "Why is this role right for you?",
+            title: "What you bring",
             paragraphs: [
-              "You enjoy the freedom of the road, take responsibility and value keeping your commitments. Your calm and professional attitude makes you a trusted face for our customers.",
+              "You enjoy working independently while understanding that successful transport is a team effort. When a journey takes an unexpected turn, you remain calm, reliable and solution-oriented.",
+            ],
+            bullets: [
+              "B, C and CE driving licences, a valid Code 95 qualification and driver card",
+              "A good command of Dutch; German and/or English is an advantage",
+              "Willingness to be away from home from Monday through Friday",
+              "An independent, careful and reliable approach to work",
+            ],
+          },
+          {
+            title: "Why drive for Interlogic",
+            paragraphs: [
+              "You start from Coevorden or Almelo and drive modern, well-equipped vehicles that become a genuine workplace on the road. You join a close-knit team with direct contact to planning.",
+            ],
+            bullets: [
+              "Salary and employment conditions in accordance with the Dutch road haulage collective agreement",
+              "The prospect of a permanent contract",
+              "Company fitness, additional leave days and team activities",
+              "A professional organisation where agreements really matter",
             ],
           },
         ],
@@ -70,25 +108,44 @@ export const vacancies: Vacancy[] = [
         department: "Transport",
         employmentType: "Vollzeit",
         description:
-          "Bringe unsere Ladung sicher und pünktlich durch Europa und werde unterwegs zum vertrauten Gesicht von Interlogic.",
+          "Du liebst internationale Touren, gutes Material und klare Absprachen? Dann steige ein und bringe unsere Teil- und Komplettladungen durch ganz Europa.",
         sections: [
           {
-            title: "Was wirst du tun?",
+            title: "Europa wird dein Arbeitsplatz",
             paragraphs: [
-              "Als internationaler Fahrer bei Interlogic bist du täglich für unsere Kunden in ganz Europa unterwegs. Du sorgst dafür, dass jede Ladung sicher, sorgfältig und pünktlich ihr Ziel erreicht.",
-              "Unterwegs stehst du in direktem Kontakt mit unserer Disposition. Du arbeitest selbstständig, bist aber nie auf dich allein gestellt: Gemeinsam sorgen wir dafür, dass jede Fahrt reibungslos verläuft.",
+              "Als internationaler Fahrer bei Interlogic transportierst du Teil- und Komplettladungen zu unterschiedlichen Zielen in Europa. Während der Arbeitswoche bist du unterwegs und genießt dabei viel Freiheit und Verantwortung.",
+              "Das effiziente An- und Abkuppeln sowie Wechseln von Aufliegern an strategischen Standorten ist ein wichtiger Teil deiner Arbeit. Du hältst Kontakt mit unserer Disposition, prüfst deine Dokumente und sorgst dafür, dass Ladung, Fahrzeug und Vereinbarungen in guten Händen sind.",
             ],
             bullets: [
-              "Internationale Transporte sicher und effizient durchführen",
+              "Teil- und Komplettladungen durch Europa transportieren",
+              "Auflieger sicher und effizient an- und abkuppeln sowie wechseln",
               "Ladung und Transportdokumente sorgfältig kontrollieren",
-              "Kontakt mit der Disposition und unseren Kunden halten",
-              "Unsere Fahrzeuge ordentlich und professionell nutzen",
+              "Unterwegs klar mit Disposition und Kunden kommunizieren",
+              "Deinen Lkw sauber halten und professionell mit unserem Material umgehen",
             ],
           },
           {
-            title: "Warum passt diese Position zu dir?",
+            title: "Das bringst du mit",
             paragraphs: [
-              "Du liebst die Freiheit auf der Straße, übernimmst Verantwortung und hältst deine Zusagen ein. Mit deiner ruhigen und professionellen Art bist du ein vertrautes Gesicht für unsere Kunden.",
+              "Du arbeitest gerne selbstständig, weißt aber auch, dass guter Transport Teamarbeit ist. Läuft eine Tour anders als geplant, bleibst du ruhig, zuverlässig und lösungsorientiert.",
+            ],
+            bullets: [
+              "Führerscheine B, C und CE, gültige Code-95-Qualifikation und Fahrerkarte",
+              "Gute Niederländischkenntnisse; Deutsch und/oder Englisch sind von Vorteil",
+              "Bereitschaft, von Montag bis Freitag unterwegs zu sein",
+              "Eine selbstständige, sorgfältige und zuverlässige Arbeitsweise",
+            ],
+          },
+          {
+            title: "Darum fährst du bei Interlogic",
+            paragraphs: [
+              "Du startest in Coevorden oder Almelo und fährst mit modernen, gut ausgestatteten Fahrzeugen, die unterwegs zu deinem echten Arbeitsplatz werden. Dich erwartet ein kleines, eng verbundenes Team mit kurzen Wegen zur Disposition.",
+            ],
+            bullets: [
+              "Gehalt und Arbeitsbedingungen nach dem niederländischen Tarifvertrag für den Güterverkehr",
+              "Aussicht auf eine Festanstellung",
+              "Betriebliche Fitnessangebote, zusätzliche Urlaubstage und gemeinsame Teamaktivitäten",
+              "Eine professionelle Organisation, in der Absprachen wirklich zählen",
             ],
           },
         ],
@@ -110,33 +167,34 @@ export const vacancies: Vacancy[] = [
         employmentType: "Fulltime",
         experience: "Senior",
         description:
-          "Houd overzicht, stuur onze transporten slim aan en zorg samen met chauffeurs en collega’s dat iedere rit klopt.",
+          "Jij kijkt verder dan de planning van vandaag en brengt klanten, chauffeurs en collega’s samen in een transportproces dat klopt.",
         sections: [
           {
-            title: "Wat ga je doen?",
+            title: "Jij houdt de planning in beweging",
             paragraphs: [
-              "Als Senior Planner ben jij de verbindende schakel tussen onze chauffeurs, klanten en interne organisatie. Je houdt overzicht over de dagelijkse transportplanning en zorgt dat mensen, materieel en afspraken slim samenkomen.",
-              "Je schakelt snel wanneer de situatie daarom vraagt, maar verliest kwaliteit en klantbelang nooit uit het oog. Dankzij jouw ervaring herken je knelpunten vroeg en help je het team steeds slimmer en efficiënter te werken.",
+              "Transportplanning is iedere dag anders. Juist dat maakt jouw werk interessant. Als Senior Transportplanner bij Interlogic overzie je niet alleen wat er vandaag rijdt, maar bouw je meerdere dagen vooruit aan een haalbare en efficiënte planning.",
+              "Je stemt continu af met chauffeurs, klanten, sales en je collega’s op de planning. Verandert er onderweg iets? Dan houd jij het hoofd koel, maak je een duidelijke keuze en zorg je dat iedereen op tijd weet waar die aan toe is.",
             ],
             bullets: [
-              "De dagelijkse nationale en internationale transportplanning coördineren",
-              "Chauffeurs begeleiden en ondersteunen tijdens hun ritten",
-              "Proactief schakelen met klanten en collega’s",
-              "Capaciteit, routes en materieel efficiënt inzetten",
-              "Knelpunten signaleren en passende oplossingen organiseren",
-              "Kennis delen en minder ervaren planners verder helpen",
+              "De bezetting, routes en inzet van materieel meerdere dagen vooruit plannen",
+              "De voortgang bewaken en vroeg bijsturen bij afwijkingen of knelpunten",
+              "Duidelijk communiceren met chauffeurs, klanten, sales en collega’s",
+              "Commerciële kansen herkennen zonder de uitvoerbaarheid uit het oog te verliezen",
+              "Beslissingen nemen die goed zijn voor de klant, het team en Interlogic",
+              "Met jouw ervaring bijdragen aan rust, kwaliteit en ontwikkeling op de afdeling",
             ],
           },
           {
-            title: "Waarom past deze functie bij jou?",
+            title: "Dit breng jij mee",
             paragraphs: [
-              "Je krijgt energie van een dynamische planning en blijft rustig wanneer er veel tegelijk gebeurt. Je communiceert duidelijk, durft beslissingen te nemen en weet mensen op een prettige manier mee te krijgen.",
+              "Jij kent de dynamiek van transport en voelt je thuis op een afdeling waar tempo, verantwoordelijkheid en teamwork samenkomen. Je ziet wat er nodig is, spreekt mensen gemakkelijk aan en durft knopen door te hakken.",
             ],
             bullets: [
-              "Je hebt ruime ervaring binnen transportplanning of logistiek",
-              "Je denkt vooruit en houdt ook onder druk het overzicht",
-              "Je bent praktisch, besluitvaardig en klantgericht",
-              "Je werkt graag samen en neemt vanzelf verantwoordelijkheid",
+              "Je hebt ruime ervaring als transportplanner of in een vergelijkbare logistieke functie",
+              "Je beschikt over mbo+ of hbo werk- en denkniveau, bij voorkeur richting transport en logistiek",
+              "Je denkt vooruit, werkt nauwkeurig en houdt overzicht wanneer de druk oploopt",
+              "Je communiceert overtuigend en combineert klantgerichtheid met commercieel inzicht",
+              "Je beheerst het Nederlands en kunt je goed redden in het Duits en Engels",
             ],
           },
         ],
@@ -147,33 +205,34 @@ export const vacancies: Vacancy[] = [
         employmentType: "Full-time",
         experience: "Senior",
         description:
-          "Stay in control, coordinate our transports intelligently and work with drivers and colleagues to make every journey run smoothly.",
+          "You look beyond today’s schedule and bring customers, drivers and colleagues together in a transport operation that works.",
         sections: [
           {
-            title: "What will you do?",
+            title: "You keep planning in motion",
             paragraphs: [
-              "As a Senior Transport Planner, you are the vital link between our drivers, customers and internal organisation. You oversee daily transport planning and make sure people, equipment and commitments come together efficiently.",
-              "You respond quickly when circumstances change without losing sight of quality or the customer. Your experience helps you identify issues early and enables the team to work smarter and more efficiently.",
+              "Transport planning is different every day, and that is exactly what makes your work interesting. As Senior Transport Planner at Interlogic, you oversee today’s operations while building a realistic and efficient schedule several days ahead.",
+              "You coordinate continuously with drivers, customers, sales and your planning colleagues. When circumstances change, you stay calm, make a clear decision and ensure everyone knows what to expect in good time.",
             ],
             bullets: [
-              "Coordinate daily national and international transport planning",
-              "Guide and support drivers during their journeys",
-              "Communicate proactively with customers and colleagues",
-              "Deploy capacity, routes and equipment efficiently",
-              "Identify issues and organise practical solutions",
-              "Share knowledge and support less experienced planners",
+              "Plan staffing, routes and equipment several days ahead",
+              "Monitor progress and intervene early when issues or changes arise",
+              "Communicate clearly with drivers, customers, sales and colleagues",
+              "Recognise commercial opportunities while keeping plans workable",
+              "Make decisions that serve the customer, the team and Interlogic",
+              "Use your experience to strengthen calm, quality and development within the department",
             ],
           },
           {
-            title: "Why is this role right for you?",
+            title: "What you bring",
             paragraphs: [
-              "You thrive in a dynamic planning environment and remain calm when several things happen at once. You communicate clearly, make confident decisions and know how to bring people along with you.",
+              "You understand the dynamics of transport and feel at home in a department where pace, responsibility and teamwork come together. You see what needs to happen, communicate easily and are comfortable making decisions.",
             ],
             bullets: [
-              "You have extensive experience in transport planning or logistics",
-              "You think ahead and stay in control under pressure",
-              "You are practical, decisive and customer-focused",
-              "You enjoy teamwork and naturally take responsibility",
+              "You have extensive experience as a transport planner or in a comparable logistics role",
+              "You have vocational or higher professional working and thinking ability, preferably in transport and logistics",
+              "You think ahead, work accurately and remain in control under pressure",
+              "You communicate convincingly and combine customer focus with commercial awareness",
+              "You are fluent in Dutch and can communicate effectively in German and English",
             ],
           },
         ],
@@ -184,33 +243,34 @@ export const vacancies: Vacancy[] = [
         employmentType: "Vollzeit",
         experience: "Senior",
         description:
-          "Behalte den Überblick, steuere unsere Transporte intelligent und sorge gemeinsam mit Fahrern und Kollegen dafür, dass jede Fahrt reibungslos verläuft.",
+          "Du blickst über die heutige Planung hinaus und verbindest Kunden, Fahrer und Kollegen zu einem Transportablauf, der funktioniert.",
         sections: [
           {
-            title: "Was wirst du tun?",
+            title: "Du hältst die Planung in Bewegung",
             paragraphs: [
-              "Als Senior Transportplaner bist du das verbindende Element zwischen unseren Fahrern, Kunden und der internen Organisation. Du behältst den Überblick über die tägliche Transportplanung und sorgst dafür, dass Menschen, Fahrzeuge und Vereinbarungen effizient zusammenkommen.",
-              "Wenn sich die Situation ändert, reagierst du schnell, ohne Qualität und Kundeninteresse aus den Augen zu verlieren. Dank deiner Erfahrung erkennst du Engpässe frühzeitig und hilfst dem Team, immer intelligenter und effizienter zu arbeiten.",
+              "Transportplanung ist jeden Tag anders – genau das macht deine Arbeit interessant. Als Senior Transportplaner bei Interlogic überblickst du nicht nur den heutigen Betrieb, sondern erstellst mehrere Tage im Voraus eine realistische und effiziente Planung.",
+              "Du stimmst dich laufend mit Fahrern, Kunden, Vertrieb und deinen Kollegen in der Disposition ab. Ändert sich unterwegs etwas, bleibst du ruhig, triffst eine klare Entscheidung und sorgst dafür, dass alle rechtzeitig wissen, woran sie sind.",
             ],
             bullets: [
-              "Die tägliche nationale und internationale Transportplanung koordinieren",
-              "Fahrer während ihrer Touren begleiten und unterstützen",
-              "Proaktiv mit Kunden und Kollegen kommunizieren",
-              "Kapazitäten, Routen und Fahrzeuge effizient einsetzen",
-              "Engpässe erkennen und passende Lösungen organisieren",
-              "Wissen teilen und weniger erfahrene Planer unterstützen",
+              "Besetzung, Routen und Fahrzeuge mehrere Tage im Voraus planen",
+              "Den Ablauf überwachen und bei Abweichungen oder Engpässen frühzeitig eingreifen",
+              "Klar mit Fahrern, Kunden, Vertrieb und Kollegen kommunizieren",
+              "Geschäftliche Chancen erkennen, ohne die Umsetzbarkeit aus den Augen zu verlieren",
+              "Entscheidungen treffen, die dem Kunden, dem Team und Interlogic dienen",
+              "Mit deiner Erfahrung zu Ruhe, Qualität und Entwicklung in der Abteilung beitragen",
             ],
           },
           {
-            title: "Warum passt diese Position zu dir?",
+            title: "Das bringst du mit",
             paragraphs: [
-              "Du arbeitest gerne in einer dynamischen Disposition und bleibst ruhig, wenn vieles gleichzeitig passiert. Du kommunizierst klar, triffst sichere Entscheidungen und kannst andere auf angenehme Weise mitnehmen.",
+              "Du kennst die Dynamik des Transportwesens und fühlst dich in einer Abteilung wohl, in der Tempo, Verantwortung und Teamarbeit zusammenkommen. Du erkennst, was nötig ist, gehst offen auf Menschen zu und triffst gerne Entscheidungen.",
             ],
             bullets: [
-              "Du verfügst über umfassende Erfahrung in der Transportplanung oder Logistik",
-              "Du denkst voraus und behältst auch unter Druck den Überblick",
-              "Du arbeitest pragmatisch, entscheidungsstark und kundenorientiert",
-              "Du arbeitest gerne im Team und übernimmst selbstverständlich Verantwortung",
+              "Du hast umfassende Erfahrung als Transportplaner oder in einer vergleichbaren Logistikfunktion",
+              "Du verfügst über ein entsprechendes berufliches oder akademisches Niveau, vorzugsweise im Bereich Transport und Logistik",
+              "Du denkst voraus, arbeitest präzise und behältst auch unter Druck den Überblick",
+              "Du kommunizierst überzeugend und verbindest Kundenorientierung mit kaufmännischem Gespür",
+              "Du beherrschst Niederländisch und kannst dich auf Deutsch und Englisch gut verständigen",
             ],
           },
         ],
