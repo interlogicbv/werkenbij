@@ -32,6 +32,10 @@ export const dictionaries = {
       eyebrow: "We think forward",
       title: "Werk waar je trots op kunt zijn",
       text: "Bij Interlogic ben je geen nummer. Jouw vakmanschap telt en jouw ideeën doen ertoe. We werken nuchter, helpen elkaar en vieren wat we samen voor elkaar krijgen.",
+      imageAlts: [
+        "Collega's van Interlogic tijdens een teamoverleg",
+        "Collega's aan het werk op kantoor bij Interlogic",
+      ],
       strengths: [
         [
           "Vertrouwen",
@@ -60,6 +64,7 @@ export const dictionaries = {
       eyebrow: "Nog vragen?",
       title: "Eerst even kennismaken?",
       text: "Mail ons of bel direct naar 0546-898960. We maken graag tijd voor je.",
+      imageAlt: "Een collega van Interlogic helpt iemand telefonisch",
       quote:
         "Een familiebedrijf waar mensen centraal staan, waar je elkaar vertrouwt en waar je samen bouwt aan de toekomst.",
       quoteBy: "Peter ter Luun",
@@ -122,6 +127,10 @@ export const dictionaries = {
       eyebrow: "We think forward",
       title: "Work you can be proud of",
       text: "At Interlogic, you are never just a number. Your expertise matters and your ideas count. We stay practical, help each other and celebrate what we achieve together.",
+      imageAlts: [
+        "Interlogic colleagues during a team meeting",
+        "Colleagues working at the Interlogic office",
+      ],
       strengths: [
         ["Trust", "You get the freedom to do your job well in your own way."],
         [
@@ -147,6 +156,7 @@ export const dictionaries = {
       eyebrow: "Any questions?",
       title: "Would you like to meet first?",
       text: "Email us or call 0546-898960. We’re happy to make time for you.",
+      imageAlt: "An Interlogic colleague helping someone by phone",
       quote:
         "A family business where people come first, where you trust one another and build the future together.",
       quoteBy: "Peter ter Luun",
@@ -209,6 +219,10 @@ export const dictionaries = {
       eyebrow: "We think forward",
       title: "Arbeit, auf die du stolz sein kannst",
       text: "Bei Interlogic bist du keine Nummer. Dein Können zählt und deine Ideen sind willkommen. Wir arbeiten pragmatisch, helfen einander und feiern, was wir gemeinsam erreichen.",
+      imageAlts: [
+        "Kollegen von Interlogic bei einer Teambesprechung",
+        "Kollegen bei der Arbeit im Interlogic-Büro",
+      ],
       strengths: [
         [
           "Vertrauen",
@@ -238,6 +252,7 @@ export const dictionaries = {
       eyebrow: "Noch Fragen?",
       title: "Erst einmal kennenlernen?",
       text: "Schreib uns oder ruf direkt unter 0546-898960 an. Wir nehmen uns gerne Zeit für dich.",
+      imageAlt: "Eine Interlogic-Kollegin hilft telefonisch weiter",
       quote:
         "Ein Familienunternehmen, in dem der Mensch im Mittelpunkt steht, man einander vertraut und gemeinsam an der Zukunft baut.",
       quoteBy: "Peter ter Luun",

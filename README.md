@@ -7,6 +7,7 @@ Versie 1.0.0 van de meertalige recruitmentsite van Interlogic, bereikbaar via [w
 - Next.js 16 met App Router en volledige statische export
 - React 19 en TypeScript
 - Tailwind CSS 4
+- React Icons voor de socialmedia-iconen
 - Gelokaliseerde routes, metadata en social previews
 - Publicatie via GitHub Pages
 

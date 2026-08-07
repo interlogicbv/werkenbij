@@ -1,5 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { ReactNode } from "react";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaYoutube,
+} from "react-icons/fa";
 
 import ArrowRight from "@/components/ArrowRight";
 import type { Locale } from "@/lib/i18n";
@@ -33,17 +40,22 @@ export default function Footer({ locale }: { locale: Locale }) {
               <SocialLink
                 href="https://nl.linkedin.com/company/interlogicbv"
                 label="LinkedIn"
-                mark="in"
+                icon={<FaLinkedinIn />}
               />
               <SocialLink
                 href="https://www.facebook.com/interlogicbv"
                 label="Facebook"
-                mark="f"
+                icon={<FaFacebookF />}
               />
               <SocialLink
                 href="https://www.instagram.com/interlogicbv/"
                 label="Instagram"
-                mark="ig"
+                icon={<FaInstagram />}
+              />
+              <SocialLink
+                href="https://www.youtube.com/@interlogicbv"
+                label="YouTube"
+                icon={<FaYoutube />}
               />
             </div>
           </div>
@@ -171,11 +183,11 @@ export default function Footer({ locale }: { locale: Locale }) {
 function SocialLink({
   href,
   label,
-  mark,
+  icon,
 }: {
   href: string;
   label: string;
-  mark: string;
+  icon: ReactNode;
 }) {
   return (
     <a
@@ -186,7 +198,9 @@ function SocialLink({
       aria-label={`${label} - Interlogic`}
       title={label}
     >
-      <span aria-hidden="true">{mark}</span>
+      <span aria-hidden="true" className="text-base">
+        {icon}
+      </span>
     </a>
   );
 }

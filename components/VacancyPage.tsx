@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -157,47 +158,61 @@ export default function VacancyPage({
           </article>
 
           <aside>
-            <div className="border-brand-500 sticky top-6 border-t-2 pt-7">
-              <h2 className="text-brand-950 text-2xl font-semibold tracking-tight">
-                {t.vacancy.applyTitle}
-              </h2>
-              <p className="mt-4 leading-7 text-slate-600">
-                {t.vacancy.applyText}
-              </p>
-              <a
-                href={`mailto:${contactEmail}?subject=${emailSubject}`}
-                className="bg-brand-950 hover:bg-brand-900 focus-visible:outline-brand-500 mt-7 inline-flex w-full justify-center px-5 py-4 text-sm font-semibold text-white transition focus-visible:outline-2 focus-visible:outline-offset-4"
-              >
-                {t.vacancy.apply}
-              </a>
-              {vacancy.indeedUrl && (
-                <a
-                  href={vacancy.indeedUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-brand-500 hover:bg-brand-600 focus-visible:outline-brand-500 mt-3 inline-flex w-full items-center justify-center gap-2 px-5 py-4 text-sm font-semibold text-white transition focus-visible:outline-2 focus-visible:outline-offset-4"
-                >
-                  {t.vacancy.applyIndeed}
-                </a>
-              )}
-              <a
-                href={`tel:${contactPhoneHref}`}
-                className="text-brand-950 hover:border-brand-500 focus-visible:outline-brand-500 mt-3 inline-flex w-full items-center justify-center gap-3 border border-mist-200 px-5 py-3.5 text-sm font-semibold transition focus-visible:outline-2 focus-visible:outline-offset-4"
-              >
-                <span className="bg-brand-500 size-2 rounded-full" />
-                0546-898960
-              </a>
-              <ShareButton
-                title={content.title}
-                description={content.description}
-                label={t.vacancy.share}
-                copiedLabel={t.vacancy.copied}
-              />
-              <div className="mt-7 border-t border-mist-200 pt-6">
-                <p className="text-sm text-slate-500">{t.vacancy.published}</p>
-                <p className="text-brand-950 mt-1 text-sm font-medium">
-                  {publishedAt}
+            <div className="shadow-card sticky top-6 overflow-hidden rounded-3xl border border-mist-200 bg-white">
+              <div className="relative aspect-[16/10] overflow-hidden">
+                <Image
+                  src="/images/collega-contact.webp"
+                  alt={t.contact.imageAlt}
+                  fill
+                  sizes="(min-width: 1024px) 360px, 100vw"
+                  className="object-cover object-[68%_42%]"
+                />
+                <div className="from-brand-950/25 absolute inset-0 bg-linear-to-t to-transparent" />
+              </div>
+              <div className="border-brand-500 border-t-2 p-7 sm:p-8 lg:p-7 xl:p-8">
+                <h2 className="text-brand-950 text-2xl font-semibold tracking-tight">
+                  {t.vacancy.applyTitle}
+                </h2>
+                <p className="mt-4 leading-7 text-slate-600">
+                  {t.vacancy.applyText}
                 </p>
+                <a
+                  href={`mailto:${contactEmail}?subject=${emailSubject}`}
+                  className="bg-brand-950 hover:bg-brand-900 focus-visible:outline-brand-500 mt-7 inline-flex w-full justify-center px-5 py-4 text-sm font-semibold text-white transition focus-visible:outline-2 focus-visible:outline-offset-4"
+                >
+                  {t.vacancy.apply}
+                </a>
+                {vacancy.indeedUrl && (
+                  <a
+                    href={vacancy.indeedUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-brand-500 hover:bg-brand-600 focus-visible:outline-brand-500 mt-3 inline-flex w-full items-center justify-center gap-2 px-5 py-4 text-sm font-semibold text-white transition focus-visible:outline-2 focus-visible:outline-offset-4"
+                  >
+                    {t.vacancy.applyIndeed}
+                  </a>
+                )}
+                <a
+                  href={`tel:${contactPhoneHref}`}
+                  className="text-brand-950 hover:border-brand-500 focus-visible:outline-brand-500 mt-3 inline-flex w-full items-center justify-center gap-3 border border-mist-200 px-5 py-3.5 text-sm font-semibold transition focus-visible:outline-2 focus-visible:outline-offset-4"
+                >
+                  <span className="bg-brand-500 size-2 rounded-full" />
+                  0546-898960
+                </a>
+                <ShareButton
+                  title={content.title}
+                  description={content.description}
+                  label={t.vacancy.share}
+                  copiedLabel={t.vacancy.copied}
+                />
+                <div className="mt-7 border-t border-mist-200 pt-6">
+                  <p className="text-sm text-slate-500">
+                    {t.vacancy.published}
+                  </p>
+                  <p className="text-brand-950 mt-1 text-sm font-medium">
+                    {publishedAt}
+                  </p>
+                </div>
               </div>
             </div>
           </aside>

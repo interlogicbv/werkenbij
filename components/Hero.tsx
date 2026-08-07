@@ -3,22 +3,17 @@ import Image from "next/image";
 import ArrowRight from "@/components/ArrowRight";
 import Menubar from "@/components/Menubar";
 import { vacancies } from "@/data/vacancies";
-import { dictionaries, type Locale } from "@/lib/i18n";
+import type { Locale } from "@/lib/i18n";
 import { websiteChrome } from "@/lib/website-chrome";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export default function Hero({ locale }: { locale: Locale }) {
-  const { hero } = websiteChrome[locale];
+  const { hero, nav } = websiteChrome[locale];
   const activeVacancies = vacancies.filter((vacancy) => vacancy.active);
   const stats = [
     ...hero.stats.slice(0, 2),
-    [
-      String(activeVacancies.length),
-      activeVacancies.length === 1
-        ? dictionaries[locale].jobs.singular
-        : dictionaries[locale].jobs.plural,
-    ],
+    [String(activeVacancies.length), nav.careers],
   ];
 
   return (
